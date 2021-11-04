@@ -1,10 +1,19 @@
-package kata3;
 
+
+package kata3;
 public class Kata3 {
     public static void main(String[] args) {
-        // TODO code application logic here
-        
-        HistogramDisplay histo = new HistogramDisplay();
-        histo.execute();
+        Histogram<String> histo = new Histogram<>();
+        histo.increment("gmail.com");
+        histo.increment("gmail.com");
+        histo.increment("ulpgc.com");
+        histo.increment("ulpgc.com");
+        histo.increment("ulpgc.com");
+        histo.increment("ulpgc.com");  
+        histo.increment("ull.com");  
+        histo.increment("ull.com");
+        histo.increment("ull.com");
+        histo.increment("hotmail.com");   
+        new HistogramDisplay(histo).execute();
     }
 }
